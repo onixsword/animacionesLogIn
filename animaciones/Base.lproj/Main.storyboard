@@ -22,12 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdd-fY-Tu0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Y-A7-cXq">
-                                <rect key="frame" x="40" y="90" width="291" height="185"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="zdd-fY-Tu0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UU-KF-8k9">
@@ -36,13 +32,6 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-Bz-gqR">
                                         <rect key="frame" x="16" y="154" width="343" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ast-sx-tXT">
-                                        <rect key="frame" x="16" y="60" width="343" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -62,6 +51,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ast-sx-tXT">
+                                        <rect key="frame" x="16" y="60" width="343" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -83,6 +79,10 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Isaac_BOI" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Y-A7-cXq">
+                                <rect key="frame" x="42" y="103" width="291" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -91,11 +91,15 @@
                         <outlet property="btn_Registrar" destination="GI9-xa-33x" id="mbF-EU-Fo2"/>
                         <outlet property="img_halo" destination="zdd-fY-Tu0" id="3bX-TR-Ipf"/>
                         <outlet property="img_logo" destination="Z1Y-A7-cXq" id="5ln-39-AcD"/>
-                        <outlet property="vw_textFields" destination="mWv-Ze-1eQ" id="4Y6-wq-fK5"/>
+                        <outlet property="vw_textFields" destination="3UU-KF-8k9" id="ZEe-IA-0IS"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Isaac_BOI" width="900" height="675"/>
+        <image name="light" width="1280" height="720"/>
+    </resources>
 </document>
